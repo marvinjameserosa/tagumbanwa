@@ -1,10 +1,16 @@
-import { Header } from "@/components/header"
-import { HeroSection } from "@/components/hero-section"
-import { AnimatedFeaturesSection } from "@/components/animated-features-section"
-import { PricingSection } from "@/components/pricing-section"
-import { FAQSection } from "@/components/faq-section"
-import { AnimatedCTASection } from "@/components/animated-cta-section"
-import { Footer } from "@/components/footer"
+import { Metadata } from "next";
+import { Header } from "@/components/header";
+import { HeroSection } from "@/components/hero-section";
+import { AnimatedFeaturesSection } from "@/components/animated-features-section";
+import { PricingSection } from "@/components/pricing-section";
+import { FAQSection } from "@/components/faq-section";
+import { AnimatedCTASection } from "@/components/animated-cta-section";
+import { Footer } from "@/components/footer";
+
+export const metadata: Metadata = {
+  title: "Welcome to Tagumbanwa",
+  description: "This is tagumbanwa app.",
+};
 
 export default function HomePage() {
   return (
@@ -19,5 +25,5 @@ export default function HomePage() {
       </main>
       <Footer />
     </div>
-  )
+  );
 }
